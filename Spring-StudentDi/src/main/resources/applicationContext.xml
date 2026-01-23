@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="com.klu.spring.Student">
+
+        <!-- Constructor Injection -->
+        <constructor-arg value="887"/>
+        <constructor-arg value="Haritha Venigalla"/>
+        <constructor-arg value="CSE"/>
+        <constructor-arg value="2"/>
+
+        <!-- Setter Injection -->
+        <property name="course" value="Full Stack Application Development"/>
+        <property name="year" value="2"/>
+
+    </bean>
+
+</beans>
